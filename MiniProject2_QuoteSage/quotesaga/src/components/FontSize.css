@@ -1,0 +1,30 @@
+.font-size {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.font-size select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.font-size.light {
+  color: #333;
+}
+
+.font-size.light select {
+  background-color: white;
+  color: #333;
+}
+
+.font-size.dark {
+  color: #e0e0e0;
+}
+
+.font-size.dark select {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}

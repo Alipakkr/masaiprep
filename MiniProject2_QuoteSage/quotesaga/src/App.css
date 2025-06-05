@@ -1,0 +1,48 @@
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.loading, .error {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+ 
+.error-message {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.error-message button {
+  margin-top: 10px;
+}

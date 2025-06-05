@@ -1,0 +1,23 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button.light {
+  background-color: #f7984f;
+  color: white;
+}
+
+.button.dark {
+  background-color: #6cf8ff;
+  color: #121212;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

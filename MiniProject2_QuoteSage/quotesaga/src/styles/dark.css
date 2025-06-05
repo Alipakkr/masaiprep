@@ -1,0 +1,18 @@
+:root {
+  --error-bg: #311;
+  --error-text: #ff5252;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.app.dark .loading {
+  background-color: #333;
+}
+
+.quote-card.dark {
+  background-color: #1e1e1e;
+  border-left: 5px solid #51fff6;
+}

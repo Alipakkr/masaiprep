@@ -1,0 +1,18 @@
+.theme-toggle {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle.light {
+  background-color: #333;
+  color: white;
+}
+
+.theme-toggle.dark {
+  background-color: #bb86fc;
+  color: #121212;
+}
