@@ -68,26 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# 🚀  Theme Toggle App
-
-This project demonstrates the use of the `useReducer` hook to toggle between light and dark themes in a React app 
-
-## 🌌 Features
-- Light/Dark mode toggle using `useReducer`
-- Neon and glassmorphism UI styling
-- Animated transitions for smooth UI changes
-- Modular structure for easy scalability
-
-## 📚 Concepts Covered
-- useReducer hook
-- Dispatching actions
-- Managing complex state logic
-- Theming and conditional rendering
-- CSS animations and transitions
-
-## 🛠️ Run Locally
-## 🎯 Learnings
-- `useReducer` provides a more scalable approach than `useState` when state logic becomes complex.
-- Dispatching actions centralizes state changes and makes debugging easier.
-- Conditional class handling allows dynamic UI theming based on state.
