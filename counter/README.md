@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Simple Counter Application Using useReducer
+
+## Overview
+This React app demonstrates how to use the `useReducer` hook to manage state for a simple counter.
+
+## Features
+- Increment and decrement the count using buttons.
+- State is managed centrally using a reducer function.
+- Demonstrates clean separation of concerns and predictable state transitions.
+
+## How to Run
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm start` to start the development server.
+4. Open `http://localhost:3000` in your browser.
+
+## Learnings
+- `useReducer` is useful for state logic that involves multiple sub-values or complex state transitions.
+- Actions dispatched to the reducer allow for clear and manageable state updates.
+- Provides an alternative to `useState` with better organization in some cases.
+
+---
+
+## Example Usage
+- Clicking **Increment** increases count by 1.
+- Clicking **Decrement** decreases count by 1.
