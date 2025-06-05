@@ -1,13 +1,115 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d1117;
+  color: #00ffe7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1a1f2c;
+  color: #00ffe7;
+  /* box-shadow: 0 0 15px #00ffe7aa; */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #00ffe7;
+  font-weight: bold;
+}
+
+.home {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.controls select {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background: #001f30;
+  color: #00ffe7;
+  /* box-shadow: 0 0 10px #00ffe7aa; */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #001f30;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffe7aa;
+  text-decoration: none;
+  color: #00ffe7;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 0 25px #00ffe7dd; */
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #001f30;
+  border-radius: 20px;
+  /* box-shadow: 0 0 30px #00ffe7bb; */
+  text-align: center;
+}
+
+.product-details img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.price, .brand, .stock {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background: #00ffe7;
+  color: #001f30;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 60px;
+  color: #00ffae;
 }
