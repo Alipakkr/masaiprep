@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group"; 
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import PostDetails from "./pages/PostDetails";
+import About from "./pages/About";
+import "./App.css";  
 
-function App() {
+const AppRoutes = () => {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TransitionGroup>
+      {/* <CSSTransition key={location.key} classNames="fade" timeout={300}> */}
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/post/:id" element={<PostDetails />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      {/* </CSSTransition> */}
+    </TransitionGroup>
   );
-}
+};
+
+const App = () => {
+  return (
+    <Router>
+      <Navbar />
+      <AppRoutes />
+    </Router>
+  );
+};
 
 export default App;
